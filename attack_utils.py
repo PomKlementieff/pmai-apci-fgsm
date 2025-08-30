@@ -75,13 +75,13 @@ def load_model(model_name):
 
 def load_ensemble_model(model_name):
     if model_name == 'Inc-v3_ens3':
-        ckpt_path = 'models/upgraded_ens3_adv_inception_v3_rename.ckpt-1'
+        ckpt_path = 'models/ens3_adv_inception_v3.ckpt-1'
         base_model = InceptionV3(weights=None, classes=1000)
     elif model_name == 'Inc-v3_ens4':
-        ckpt_path = 'models/upgraded_ens4_adv_inception_v3_rename.ckpt-1'
+        ckpt_path = 'models/ens4_adv_inception_v3.ckpt-1'
         base_model = InceptionV3(weights=None, classes=1000)
     elif model_name == 'IncRes-v2_ens':
-        ckpt_path = 'models/upgraded_ens_adv_inception_resnet_v2_rename.ckpt-1'
+        ckpt_path = 'models/ens_adv_inception_resnet_v2.ckpt-1'
         base_model = InceptionResNetV2(weights=None, classes=1000)
     else:
         raise ValueError(f"Unknown ensemble model: {model_name}")
