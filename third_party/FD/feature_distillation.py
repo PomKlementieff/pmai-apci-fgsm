@@ -146,7 +146,7 @@ class FeatureDistillation(tf.keras.layers.Layer):
     def get_config(self):
         return super(FeatureDistillation, self).get_config()
 
-def create_defended_model(ckpt_path='upgraded_ens3_adv_inception_v3_rename.ckpt-1'):
+def create_defended_model(ckpt_path='ens3_adv_inception_v3.ckpt-1'):
     """방어 모델을 생성합니다."""
     suppress_tensorflow_warnings()
     base_model = load_ensemble_model(ckpt_path)
