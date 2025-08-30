@@ -136,7 +136,7 @@ class NIPSDefenseModel(tf.keras.Model):
         self.config = Config()
         self.inception_v3 = tf.keras.applications.InceptionV3(weights=None, classes=1000)
         
-        ckpt_path = 'third_party/NIPS_r3/upgraded_ens3_adv_inception_v3_rename.ckpt-1'
+        ckpt_path = 'third_party/NIPS_r3/ens3_adv_inception_v3.ckpt-1'
         reader = tf.train.load_checkpoint(ckpt_path)
         shape_from_key = reader.get_variable_to_shape_map()
         
