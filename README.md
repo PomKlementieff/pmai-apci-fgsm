@@ -56,6 +56,8 @@ pip install tensorflow numpy scipy scikit-image opencv-python pillow h5py matplo
 > - RS (Random Smoothing): `third_party/RS/tf_model_weights.h5`
 > - NRP (Purify): SavedModel at `third_party/NRP/tf_models/nrp_model`
 
+> - **Model Checkpoints**: You can download the pre-trained checkpoints from [this Google Drive folder](https://drive.google.com/drive/folders/18gWRGwH2jfb3JaqNUvHrOL7tOLUJ_oYi?usp=sharing).
+
 ---
 
 ## Dataset
