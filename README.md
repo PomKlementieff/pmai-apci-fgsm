@@ -216,7 +216,3 @@ If you use this code, please cite the paper:
   year      = {2025}
 }
 ```
-
-## License
-
-Add your license of choice (e.g., MIT). Third‑party checkpoints/defense models follow their original licenses.
