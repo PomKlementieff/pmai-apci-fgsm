@@ -17,17 +17,17 @@ suppress_tensorflow_warnings()
 
 MODEL_PATHS = {
     'jpeg_defense': {
-        'path': 'third_party/JPEG/upgraded_ens3_adv_inception_v3_rename.ckpt-1',
+        'path': 'third_party/JPEG/ens3_adv_inception_v3.ckpt-1',
         'module': 'JPEG.jpeg',
         'class': JPEGCompression
     },
     'feature_distill': {
-        'path': 'third_party/FD/upgraded_ens3_adv_inception_v3_rename.ckpt-1',
+        'path': 'third_party/FD/ens3_adv_inception_v3.ckpt-1',
         'module': 'FD.feature_distillation',
         'class': FeatureDistillation
     },
     'bit_red': {
-        'path': 'third_party/Bit_Red/upgraded_ens3_adv_inception_v3_rename.ckpt-1',
+        'path': 'third_party/Bit_Red/ens3_adv_inception_v3.ckpt-1',
         'module': 'Bit_Red.bit_red',
         'class': BitDepthReduce
     }
