@@ -46,12 +46,12 @@ pip install tensorflow numpy scipy scikit-image opencv-python pillow h5py matplo
 > **Checkpoints expected by the code**
 >
 > **Robust ensembles (for substitute/targets):**
-> - `models/upgraded_ens3_adv_inception_v3_rename.ckpt-1`
-> - `models/upgraded_ens4_adv_inception_v3_rename.ckpt-1`
-> - `models/upgraded_ens_adv_inception_resnet_v2_rename.ckpt-1`
+> - `models/ens3_adv_inception_v3.ckpt-1`
+> - `models/ens4_adv_inception_v3.ckpt-1`
+> - `models/ens_adv_inception_resnet_v2.ckpt-1`
 >
 > **Defenses expecting weights under `third_party/` (see `defense_attack_utils.py`):**
-> - JPEG / FD / Bit‑Red: `third_party/<JPEG|FD|Bit_Red>/upgraded_ens3_adv_inception_v3_rename.ckpt-1`
+> - JPEG / FD / Bit‑Red: `third_party/<JPEG|FD|Bit_Red>/ens3_adv_inception_v3.ckpt-1`
 > - R&P (Inception‑ResNet‑v2): `third_party/R_P/ens_adv_inception_resnet_v2.ckpt`
 > - RS (Random Smoothing): `third_party/RS/tf_model_weights.h5`
 > - NRP (Purify): SavedModel at `third_party/NRP/tf_models/nrp_model`
